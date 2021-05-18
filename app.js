@@ -4,7 +4,7 @@ var bodyParser = require('body-parser'),
     app = express();
 
     // call router to connect database
-    const pool = require('../Fyle_Chalange/db');
+    const pool = require('../Fyle_Chalange_Part_1/db');
 
     app.use(bodyParser.json());
 
@@ -59,6 +59,6 @@ var bodyParser = require('body-parser'),
 
 
 // server listening 
-app.listen(3000, function () {
-    console.log("App listening on port 3000!");
+app.listen(5000, function () {
+    console.log("App listening on port 5000!");
     });
