@@ -3,6 +3,9 @@ var bodyParser = require('body-parser'),
     request = require('request'),
     app = express();
 
+    // const cors = require('cors');
+    // app.use(cors());
+
     // call router to connect database
     const pool = require('../Fyle_Chalange_Part_1/db');
 
