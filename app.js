@@ -3,9 +3,6 @@ var bodyParser = require('body-parser'),
     request = require('request'),
     app = express();
 
-    // const cors = require('cors');
-    // app.use(cors());
-
     // call router to connect database
     const pool = require('../Fyle_Chalange_Part_1/db');
 
@@ -20,14 +17,13 @@ var bodyParser = require('body-parser'),
                 limit:  req.query.limit,
                 offset: req.query.offset
             };
-
+            
             const values = [ rqData.branch, rqData.limit, rqData.offset];
 
             const data = await pool.query("SELECT * FROM branches WHERE branch LIKE $1" 
                                           + "ORDER BY ifsc ASC LIMIT $2 OFFSET $3",
                                             values);
-
-            res.json(data.rows);
+            res.json(data);
 
         } catch (err) {
            console.log(err.message); 
@@ -52,8 +48,7 @@ var bodyParser = require('body-parser'),
                                             + "district LIKE $1 or state LIKE $1"
                                             + "ORDER BY ifsc ASC LIMIT $2 OFFSET $3",
                                             values);
-
-            res.json(data.rows);
+            res.json(data);
 
         } catch (err) {
            console.log(err.message); 
