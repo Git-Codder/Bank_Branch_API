@@ -1,5 +1,4 @@
 const Pool  = require('pg').Pool;
-require('dotenv/config');
 
 // create a client to handle the request of user related to database
 const pool = new Pool({
