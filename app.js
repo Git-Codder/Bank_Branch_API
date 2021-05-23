@@ -3,12 +3,7 @@ var bodyParser = require('body-parser'),
     request = require('request'),
     app = express();
 
-//     if (process.env.NODE_ENV !== 'production') require('dotenv').config()
-
-    // call router to connect database
-//     const pool = require('../Fyle_Chalange_Part_1/db');
-
-
+    // making client
     const Pool  = require('pg').Pool;
     const pool = new Pool({
         user: process.env.POSTGRESQL_ADDON_USER,
