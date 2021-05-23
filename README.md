@@ -1,6 +1,6 @@
-# [**Fyle Full Stack Coding Challenge**](https://www.notion.so/Fyle-Full-Stack-Coding-Challenge-db30c5cb91d54de1b330c16f22fc49f0) [Part 1]
+# [**Fyle Full Stack Coding Challenge (Bank Branch API)**](https://www.notion.so/Fyle-Full-Stack-Coding-Challenge-db30c5cb91d54de1b330c16f22fc49f0) [Part 1]
 
-## Live Demo [Link](https://banks-info.herokuapp.com/)
+## Live Demo [Link](https://banks-branches-api.herokuapp.com/api/branches/autocomplete?q=bangalore&limit=5&offset=1)
 
 ## API usage
 **1) Autocomplete API**
@@ -116,7 +116,7 @@ curl -i -H "Accept: application/json" https://banks-branches-api.herokuapp.com/a
 ```
 
 ## Task List
-- [X] Setup Server
+- [X] Setup node Server
 - [X] Setup Credentials in Environment variable
 - [X] Setup Database Connection
 - [X] Work on API
