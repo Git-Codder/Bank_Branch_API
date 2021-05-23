@@ -6,7 +6,6 @@ const pool = new Pool({
     password: process.env.POSTGRESQL_ADDON_PASSWORD,
     database: process.env.POSTGRESQL_ADDON_DB,
     host: process.env.POSTGRESQL_ADDON_HOST,
-    port: process.env.POSTGRESQL_ADDON_PORT,
     uri: process.env.POSTGRESQL_ADDON_URI
 });
 
