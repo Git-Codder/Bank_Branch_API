@@ -57,6 +57,6 @@ var bodyParser = require('body-parser'),
 
 
 // server listening 
-app.listen(5000, function () {
-    console.log("App listening on port 5000!");
-    });
+app.listen(process.env.PORT || 5000,process.env.IP,function(){
+    console.log("App is listening Now....!");
+});
