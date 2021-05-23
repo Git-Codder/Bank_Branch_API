@@ -6,8 +6,17 @@ var bodyParser = require('body-parser'),
 //     if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 
     // call router to connect database
-    const pool = require('../Fyle_Chalange_Part_1/db');
+//     const pool = require('../Fyle_Chalange_Part_1/db');
 
+
+    const Pool  = require('pg').Pool;
+    const pool = new Pool({
+        user: process.env.POSTGRESQL_ADDON_USER,
+        password: process.env.POSTGRESQL_ADDON_PASSWORD,
+        database: process.env.POSTGRESQL_ADDON_DB,
+        host: process.env.POSTGRESQL_ADDON_HOST,
+        uri: process.env.POSTGRESQL_ADDON_URI
+    });
     app.use(bodyParser.json());
 
     // API call to get the all bank detail of particular branch along with limit and offset value
