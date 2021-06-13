@@ -1,4 +1,4 @@
-# [**Bank Branch API**](https://www.notion.so/Fyle-Full-Stack-Coding-Challenge-db30c5cb91d54de1b330c16f22fc49f0) [Part 1]
+# [**Bank Branch API**][Part 1]
 
 ## Live Demo [Link](https://banks-branches-api.herokuapp.com/api/branches/autocomplete?q=bangalore&limit=5&offset=1)
 
