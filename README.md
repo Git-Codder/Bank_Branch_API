@@ -1,4 +1,4 @@
-# **Bank Branch API**[Part 1]
+# **Bank Branch API**
 
 ## Live Demo [Link](https://banks-branches-api.herokuapp.com/api/branches/autocomplete?q=bangalore&limit=5&offset=1)
 
